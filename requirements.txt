@@ -1,0 +1,12 @@
+pip install kaggle
+kaggle datasets download -d adrianboguszewski/landcoverai
+
+$env:KAGGLE_CONFIG_DIR = "C:\Users\rrout\CODES"
+
+mkdir landcover_project
+cd landcover_project
+python -m vnev landcover_env
+
+.\landcover_env\Scripts\activate
+
+pip install torch torchvision flask opencv-python numpy matplotlib pillow requests tqdm
